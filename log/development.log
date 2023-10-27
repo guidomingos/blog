@@ -1,0 +1,7 @@
+Started GET "/" for 127.0.0.1 at 2023-10-27 11:49:33 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/guilhermedomingos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/guilhermedomingos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 905)
+Completed 200 OK in 33ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 10380)
+
+
