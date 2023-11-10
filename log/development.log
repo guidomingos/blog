@@ -1376,3 +1376,280 @@ Processing by BlogPostsController#show as HTML
 Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 1793)
 
 
+Started GET "/tweets" for 127.0.0.1 at 2023-11-09 10:24:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/tweets"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:24:03 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 926)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2066)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 1.4ms | Allocations: 2379)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:24:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 13706)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 17602)
+Completed 200 OK in 22ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 25767)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:24:46 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 766)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1901)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 2243)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:24:48 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 655)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 1675)
+Completed 200 OK in 32ms (Views: 24.1ms | ActiveRecord: 0.2ms | Allocations: 1956)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2023-11-09 10:25:06 -0300
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:48:in `set_blog_post'
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :set_blog_post rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.4ms | Allocations: 3116)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:25:06 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1820)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 2141)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2023-11-09 10:25:12 -0300
+Processing by BlogPostsController#new as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 4776)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-11-09 10:25:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/guilhermedomingos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/guilhermedomingos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 1144)
+  Rendered /Users/guilhermedomingos/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4773)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5741)
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 20161)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-11-09 10:25:23 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"guilherme63@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "guilherme63@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/blog_posts/new
+Completed 303 See Other in 276ms (ActiveRecord: 0.9ms | Allocations: 5296)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2023-11-09 10:25:24 -0300
+Processing by BlogPostsController#new as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 2.0ms | Allocations: 1802)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2193)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3324)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 5284)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2023-11-09 10:25:36 -0300
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"Titulo", "body"=>"body"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+  [1m[36mBlogPost Create (1.6ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Titulo"], ["body", "body"], ["created_at", "2023-11-09 13:25:36.738787"], ["updated_at", "2023-11-09 13:25:36.738787"]]
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/blog_posts/5
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms | Allocations: 4620)
+
+
+Started GET "/blog_posts/5" for 127.0.0.1 at 2023-11-09 10:25:36 -0300
+Processing by BlogPostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:48:in `set_blog_post'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/blog_posts/show.html.erb:1
+  Rendered blog_posts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1224)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2262)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 3121)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:34:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 13754)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 141.1ms | Allocations: 124625)
+Completed 200 OK in 166ms (Views: 142.7ms | ActiveRecord: 1.4ms | Allocations: 132773)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:35:37 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 813)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 10799)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.5ms | Allocations: 11141)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 10:37:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 13755)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 32932)
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 0.7ms | Allocations: 41102)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 13:58:01 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 998)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 82.8ms | Allocations: 3170)
+Completed 200 OK in 124ms (Views: 102.3ms | ActiveRecord: 6.1ms | Allocations: 3512)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 13:59:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 13755)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 85203)
+Completed 200 OK in 85ms (Views: 71.4ms | ActiveRecord: 1.3ms | Allocations: 93373)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2023-11-09 13:59:38 -0300
+Processing by BlogPostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 10.4ms | Allocations: 2678)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 3032)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 12063)
+Completed 200 OK in 47ms (Views: 19.7ms | ActiveRecord: 0.2ms | Allocations: 18428)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2023-11-09 13:59:58 -0300
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"Hello 1234567890 12345678990 1234567889", "body"=>"sdsdgjh gdfjghf djkghdkfjgh kdsjfgh kjdfhgk jdfhgjkl hflkgjhgkl jdfhkljghdf gjdfhjkg dhljkg dfhsgjkdfhgjkdfhslgjk dsfhgk jdfhgjdfh gkl"}, "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+  [1m[36mBlogPost Create (2.3ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello 1234567890 12345678990 1234567889"], ["body", "sdsdgjh gdfjghf djkghdkfjgh kdsjfgh kjdfhgk jdfhgjkl hflkgjhgkl jdfhkljghdf gjdfhjkg dhljkg dfhsgjkdfhgjkdfhslgjk dsfhgk jdfhgjdfh gkl"], ["created_at", "2023-11-09 16:59:58.308780"], ["updated_at", "2023-11-09 16:59:58.308780"]]
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/blog_posts_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/blog_posts/6
+Completed 302 Found in 33ms (ActiveRecord: 3.5ms | Allocations: 4826)
+
+
+Started GET "/blog_posts/6" for 127.0.0.1 at 2023-11-09 13:59:58 -0300
+Processing by BlogPostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/blog_posts_controller.rb:48:in `set_blog_post'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/blog_posts/show.html.erb:1
+  Rendered blog_posts/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1232)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 10244)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 11833)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-09 14:00:03 -0300
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 763)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 10549)
+Completed 200 OK in 19ms (Views: 11.8ms | ActiveRecord: 0.6ms | Allocations: 10831)
+
+
+Started GET "/" for 127.0.0.1 at 2023-11-10 07:50:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 13807)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 85426)
+Completed 200 OK in 127ms (Views: 97.3ms | ActiveRecord: 0.8ms | Allocations: 93599)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2023-11-10 07:50:15 -0300
+Processing by BlogPostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 7.6ms | Allocations: 2678)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3032)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 12063)
+Completed 200 OK in 26ms (Views: 17.3ms | ActiveRecord: 0.1ms | Allocations: 16037)
+
+
